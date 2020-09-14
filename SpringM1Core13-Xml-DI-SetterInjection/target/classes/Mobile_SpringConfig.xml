@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="mobile" class="siva.spring.core.beans.Mobile">
+		<property name="simCard" ref="sim" />
+	</bean>
+
+
+	<bean id="sim" class="siva.spring.core.beans.SimCard">
+		<property value="8142651855" name="simNumber" />
+		<property value="microsim" name="simName" />
+	</bean>
+
+
+</beans>

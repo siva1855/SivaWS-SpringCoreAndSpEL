@@ -1,0 +1,17 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- we can use in -id- place as -name- -->
+	<bean id="beanLifeCycle"
+		class="siva.spring.core.beans.BeanLifeCycle"
+		init-method="customInitMethod" destroy-method="customDestroyMethod">
+		<property name="message" value="Hello World!" />
+	</bean>
+
+	<!-- id is optional -->
+	<bean id="myBeanPostProcessor"
+		class="siva.spring.core.beans.MyBeanPostProcessor" />
+
+</beans>

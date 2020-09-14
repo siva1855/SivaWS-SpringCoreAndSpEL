@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="mobile" class="siva.spring.core.beans.Mobile">
+		<constructor-arg name="companyName" value="Redmi" />
+		<constructor-arg name="simCard" ref="sim" />
+	</bean>
+
+
+	<bean id="sim" class="siva.spring.core.beans.SimCard">
+		<constructor-arg name="provider" value="airtel" />
+	</bean>
+
+
+</beans>

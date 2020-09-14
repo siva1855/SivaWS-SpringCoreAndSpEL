@@ -1,0 +1,13 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="aaa" class="siva.spring.core.beans.A">
+		<property name="b" ref="bbb" />
+	</bean>
+	
+	<bean id="bbb" class="siva.spring.core.beans.B">
+		<property name="a" ref="aaa" />
+	</bean>
+</beans>

@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<bean id="book" class="siva.spring.core.beans.Book">
+	
+		<constructor-arg name="springAuthor" value="Shaker Sir" />
+		<constructor-arg name="javaAuthor" value="Durga Sir" />
+		
+		<property name="springAuthor" value="Rod Johnson" />
+		<property name="javaAuthor" value="Games Gousling" />
+	</bean>
+</beans>

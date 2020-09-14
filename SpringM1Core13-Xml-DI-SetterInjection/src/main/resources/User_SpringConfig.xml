@@ -1,0 +1,20 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+                           
+
+	<bean id="userController" class="siva.spring.core.beans.UserController">
+		<property name="userService" ref="service1" />
+	</bean>
+
+
+	<bean id="service1" class="siva.spring.core.beans.UserService">
+		<property name="userDao" ref="dao1" />
+	</bean>
+	
+	<bean id="dao1" class="siva.spring.core.beans.UserDao">
+		<property name="dataBaseName" value="OracleDB" />
+	</bean>
+	
+</beans>

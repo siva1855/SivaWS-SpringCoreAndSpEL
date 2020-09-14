@@ -1,0 +1,14 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="singletonClass"
+		class="siva.spring.core.beans.SingletonClass" scope="singleton">
+		<lookup-method name="getInstanceMethod"
+			bean="prototypeClass" />
+	</bean>
+
+	<bean id="prototypeClass"
+		class="siva.spring.core.beans.PrototypeClass" scope="prototype" />
+</beans>

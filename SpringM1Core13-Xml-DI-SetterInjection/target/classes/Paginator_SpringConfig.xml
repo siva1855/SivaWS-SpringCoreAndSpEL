@@ -1,0 +1,15 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="pagiNator" class="siva.spring.core.beans.PagiNator">
+		<property name="totalRecords" value="123" />
+		<property name="page" ref="pageId" />
+	</bean>
+
+	<bean id="pageId" class="siva.spring.core.beans.Page">
+		<property name="recordPages" value="12345" />
+	</bean>
+
+</beans>
