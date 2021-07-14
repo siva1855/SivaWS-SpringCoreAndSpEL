@@ -1,2 +1,2 @@
-# SivaWS-SpringCoreAndSpEL
-Spring Core And Spring Expression Language Programs
+# SivaWS-SpringFrameworkCoreAndSpEL
+SpringFramework Core And SpringFramework Expression Language Programs
